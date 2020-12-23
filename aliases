@@ -1,5 +1,6 @@
 ### ZSH ###
 alias resource="source ~/.zshrc"
+alias editrc="atom ~/.zshrc"
 
 ### GIT ####
 alias commits="history | grep 'git commit .*ITEM-' | tail -n 5"
