@@ -1,6 +1,8 @@
 ### ZSH ###
 alias resource="source ~/.zshrc"
 alias editrc="atom ~/.zshrc"
+alias edita="atom $ALIASES_DIR/aliases"
+alias updatea="cd $ALIASES_DIR; git pull"
 
 ### GIT ####
 alias commits="history | grep 'git commit .*ITEM-' | tail -n 5"
@@ -9,3 +11,9 @@ alias fixpointers="git lfs uninstall && git reset --hard && git lfs install && g
 alias gcmp="git checkout master; git pull"
 alias gcaan="git commit -a --amend --no-edit"
 alias gls="git log --pretty=oneline --abbrev-commit"
+
+### Python ###
+alias sourcev="source .venv/bin/activate"
+
+### Pelican ###
+alias startpelican="rm -rf output; make devserver"
