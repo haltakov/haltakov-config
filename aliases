@@ -14,6 +14,12 @@ alias gls="git log --pretty=oneline --abbrev-commit"
 
 ### Python ###
 alias sourcev="source .venv/bin/activate"
+alias localserver="python3 -m http.server --cgi 8080"
+
+### PyPI ###
+alias pypibuild="python setup.py sdist bdist_wheel"
+alias pypiupload="python3 -m twine upload dist/*"
+
 
 ### Pelican ###
 alias startpelican="rm -rf output; make devserver"
