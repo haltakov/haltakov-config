@@ -13,6 +13,7 @@ alias gcaan="git commit -a --amend --no-edit"
 alias gls="git log --pretty=oneline --abbrev-commit"
 
 ### Python ###
+alias createv="python -m venv .venv"
 alias sourcev="source .venv/bin/activate"
 alias localserver="python3 -m http.server --cgi 8080"
 
