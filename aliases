@@ -1,8 +1,12 @@
 ### ZSH ###
 alias resource="source ~/.zshrc"
-alias editrc="atom ~/.zshrc"
-alias edita="atom $ALIASES_DIR/aliases"
+alias editrc="code ~/.zshrc"
+alias edita="code $ALIASES_DIR/aliases"
 alias updatea="cd $ALIASES_DIR; git pull"
+
+### General ###
+alias hg="history | grep"
+alias psg="ps -A | grep"
 
 ### GIT ####
 alias commits="history | grep 'git commit .*ITEM-' | tail -n 5"
