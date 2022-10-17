@@ -28,3 +28,8 @@ alias pypiupload="python3 -m twine upload dist/*"
 
 ### Pelican ###
 alias startpelican="rm -rf output; make devserver"
+
+
+### NextJS ###
+alias dev-main="dotenv -e .env.mainnet yarn dev"
+alias dev-test="dotenv -e .env.testnet yarn dev"
