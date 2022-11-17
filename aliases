@@ -33,3 +33,7 @@ alias startpelican="rm -rf output; make devserver"
 ### NextJS ###
 alias dev-main="dotenv -e .env.mainnet yarn dev"
 alias dev-test="dotenv -e .env.testnet yarn dev"
+
+
+### Vercel ###
+alias vc-push="bash /Users/vladimir/Projects/haltakov-config/scripts/vc-push.sh"
