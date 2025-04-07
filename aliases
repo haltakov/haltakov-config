@@ -37,3 +37,7 @@ alias dev-test="dotenv -e .env.testnet yarn dev"
 
 ### Vercel ###
 alias vc-push="bash /Users/vladimir/Projects/haltakov-config/scripts/vc-push.sh"
+
+# VPS
+alias sshv="ssh 'vlad@65.21.174.109'"
+alias dbtunnel="ssh -L 5433:localhost:5432 vlad@65.21.174.109 -N"
