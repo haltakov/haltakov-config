@@ -15,6 +15,7 @@ alias fixpointers="git lfs uninstall && git reset --hard && git lfs install && g
 alias gcmp="git checkout master; git pull"
 alias gcaan="git commit -a --amend --no-edit"
 alias gls="git log --pretty=oneline --abbrev-commit"
+alias updateprod="git checkout release/prod && git pull && git pull origin main && git push"
 
 ### Python ###
 alias createv="python -m venv .venv"
@@ -39,5 +40,5 @@ alias dev-test="dotenv -e .env.testnet yarn dev"
 alias vc-push="bash /Users/vladimir/Projects/haltakov-config/scripts/vc-push.sh"
 
 # VPS
-alias sshv="ssh 'vlad@65.21.174.109'"
-alias dbtunnel="ssh -L 5433:localhost:5432 vlad@65.21.174.109 -N"
+alias sshv="ssh -i ~/.ssh/id_ed25519_hetzner_vlad vlad@65.21.174.109"
+alias dbtunnel="ssh -i ~/.ssh/id_ed25519_hetzner_vlad -L 5433:localhost:5432 vlad@65.21.174.109 -N"
