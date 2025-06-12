@@ -23,7 +23,10 @@ sudo -u "$USER" mkdir -p "$HOME_DIR/.vnc"
 cat > "$HOME_DIR/.vnc/xstartup" <<'EOF'
 #!/bin/sh
 [ -f ~/.Xresources ] && xrdb ~/.Xresources
-startxfce4 &
+export DISPLAY=:${DISPLAY#:}
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+exec startxfce4
 EOF
 chown "$USER":"$USER" "$HOME_DIR/.vnc/xstartup"
 chmod +x "$HOME_DIR/.vnc/xstartup"
